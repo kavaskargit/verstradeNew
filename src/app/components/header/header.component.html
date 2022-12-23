@@ -1,0 +1,16 @@
+<mat-toolbar class="head">
+    <mat-toolbar-row>
+        <span><a><img src="../../../assets/Logo-horizontaal-300x90.png" width="150" class="img-fluid"></a></span>
+        <ul class="menu">
+          <li><a>Date: {{dateTimeValue}} - Time Ago: {{dateTimeValue | timeago}}</a></li>
+        </ul>
+        
+        
+        <span class="example-spacer"></span>
+        <button mat-button [matMenuTriggerFor]="menu">kavaskarverstrade <span style="position: relative;top: 7px;"><mat-icon>keyboard_arrow_down</mat-icon></span></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item >Logout</button>
+        </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
